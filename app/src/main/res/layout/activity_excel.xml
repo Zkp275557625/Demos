@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="姓名"
+        android:textSize="14sp" />
+
+    <com.zkp.demos.excel.MyHorizontalScrollView
+        android:id="@+id/scrollViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/tvName"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/llTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+    </com.zkp.demos.excel.MyHorizontalScrollView>
+
+
+    <ListView
+        android:id="@+id/listViewName"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+    <com.zkp.demos.excel.MyHorizontalScrollView
+        android:id="@+id/scrollViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvName"
+        android:layout_toRightOf="@id/listViewName"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <ListView
+            android:id="@+id/listViewContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+    </com.zkp.demos.excel.MyHorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvValue1"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue2"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue3"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue4"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue5"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue6"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue7"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue8"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue9"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue10"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue11"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue12"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue13"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue14"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue15"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue16"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue17"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue18"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue19"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvValue20"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="1"
+        android:textStyle="bold" />
+
+</LinearLayout>
