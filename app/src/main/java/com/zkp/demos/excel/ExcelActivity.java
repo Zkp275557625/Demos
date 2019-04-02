@@ -11,6 +11,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.zkp.demos.App;
 import com.zkp.demos.MainListViewAdapter;
 import com.zkp.demos.R;
 
@@ -44,6 +45,8 @@ public class ExcelActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_excel);
+
+        App.getApplication().addActivity(this);
 
         initUI();
 
