@@ -18,6 +18,7 @@ import com.yanzhenjie.permission.Action;
 import com.yanzhenjie.permission.AndPermission;
 import com.yanzhenjie.permission.runtime.Permission;
 import com.zkp.demos.excel.ExcelActivity;
+import com.zkp.demos.mvp.MvpActivity;
 import com.zkp.demos.permission.RuntimeRationale;
 
 import java.util.ArrayList;
@@ -53,26 +54,6 @@ public class MainActivity extends AppCompatActivity {
         initUI();
     }
 
-    private void initUI() {
-        mListView = findViewById(R.id.listView);
-        mTitles.add("Excel");
-        mAdapter = new MainListViewAdapter(this, mTitles);
-        mListView.setAdapter(mAdapter);
-
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (mAdapter.getItem(position)) {
-                    case "Excel":
-                        startActivity(new Intent(MainActivity.this, ExcelActivity.class));
-                        break;
-                    default:
-                        break;
-                }
-            }
-        });
-    }
-
     private void requestPermission(String... permissions) {
         AndPermission.with(this)
                 .runtime()
@@ -94,6 +75,32 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .start();
+    }
+
+    private void initUI() {
+        mListView = findViewById(R.id.listView);
+        mTitles.add("团队数据");
+        mTitles.add("mvp架构");
+        mAdapter = new MainListViewAdapter(this, mTitles);
+        mListView.setAdapter(mAdapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (mAdapter.getItem(position)) {
+                    case "团队数据":
+                        startActivity(new Intent(MainActivity.this, ExcelActivity.class));
+                        break;
+                    case "mvp架构":
+                        startActivity(new Intent(MainActivity.this, MvpActivity.class));
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
+
+
     }
 
     public void showSettingDialog(Context context, final List<String> permissions) {

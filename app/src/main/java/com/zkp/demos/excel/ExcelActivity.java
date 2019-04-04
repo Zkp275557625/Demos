@@ -134,13 +134,9 @@ public class ExcelActivity extends AppCompatActivity {
             if (scrollState == SCROLL_STATE_IDLE || scrollState == SCROLL_STATE_TOUCH_SCROLL) {
                 View subView = view.getChildAt(0);
                 if (subView != null && view == mListViewContent) {
-                    int top = subView.getTop();
-                    int position = view.getFirstVisiblePosition();
-                    mListViewName.setSelectionFromTop(position, top);
+                    mListViewName.setSelectionFromTop(view.getFirstVisiblePosition(), subView.getTop());
                 } else if (subView != null && view == mListViewName) {
-                    int top = subView.getTop();
-                    int position = view.getFirstVisiblePosition();
-                    mListViewContent.setSelectionFromTop(position, top);
+                    mListViewContent.setSelectionFromTop(view.getFirstVisiblePosition(), subView.getTop());
                 }
             }
         }
@@ -153,11 +149,9 @@ public class ExcelActivity extends AppCompatActivity {
             }
             View subView = view.getChildAt(0);
             if (subView != null && view == mListViewContent) {
-                int top = subView.getTop();
-                mListViewName.setSelectionFromTop(firstVisibleItem, top);
+                mListViewName.setSelectionFromTop(firstVisibleItem, subView.getTop());
             } else if (subView != null && view == mListViewName) {
-                int top = subView.getTop();
-                mListViewContent.setSelectionFromTop(firstVisibleItem, top);
+                mListViewContent.setSelectionFromTop(firstVisibleItem, subView.getTop());
             }
         }
     }
