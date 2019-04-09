@@ -1,6 +1,7 @@
 package com.zkp.demos;
 
 import android.app.Application;
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 
@@ -22,23 +23,31 @@ import java.util.Objects;
 public class App extends Application {
 
     private static App application;
+    private static Context mContext;
 
     private List<AppCompatActivity> mActivityList;
     private List<Fragment> mFragmentsList;
+
+    public static Context getContext() {
+        return mContext;
+    }
+
+    public static App getApplication() {
+        return application;
+    }
 
     @Override
     public void onCreate() {
         super.onCreate();
         application = this;
+        mContext = this;
         mActivityList = new ArrayList<>();
         mFragmentsList = new ArrayList<>();
+
+        //初始化SmartShow
         SmartShow.init(this);
         SmartToast.setting().typeInfoToastThemeColorRes(R.color.colorPrimary);
 
-    }
-
-    public static App getApplication() {
-        return application;
     }
 
     public void initUnCaughtHandler() {

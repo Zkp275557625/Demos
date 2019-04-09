@@ -11,7 +11,7 @@
         android:text="姓名"
         android:textSize="14sp" />
 
-    <com.zkp.demos.excel.MyHorizontalScrollView
+    <com.zkp.demos.modules.excel.MyHorizontalScrollView
         android:id="@+id/scrollViewTitle"
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -25,7 +25,7 @@
             android:layout_height="match_parent"
             android:orientation="horizontal" />
 
-    </com.zkp.demos.excel.MyHorizontalScrollView>
+    </com.zkp.demos.modules.excel.MyHorizontalScrollView>
 
 
     <ListView
@@ -36,7 +36,7 @@
         android:divider="@null"
         android:scrollbars="none" />
 
-    <com.zkp.demos.excel.MyHorizontalScrollView
+    <com.zkp.demos.modules.excel.MyHorizontalScrollView
         android:id="@+id/scrollViewContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -52,6 +52,6 @@
             android:divider="@null"
             android:scrollbars="none" />
 
-    </com.zkp.demos.excel.MyHorizontalScrollView>
+    </com.zkp.demos.modules.excel.MyHorizontalScrollView>
 
 </RelativeLayout>

@@ -11,12 +11,11 @@ import android.os.Environment;
 import com.coder.zzq.smartshow.toast.SmartToast;
 import com.zkp.demos.App;
 import com.zkp.demos.BuildConfig;
-import com.zkp.demos.MainActivity;
+import com.zkp.demos.main.MainActivity;
 import com.zkp.demos.R;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.io.Writer;
