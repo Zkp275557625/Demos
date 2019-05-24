@@ -21,6 +21,7 @@ import com.zkp.demos.App;
 import com.zkp.demos.R;
 import com.zkp.demos.modules.excel.ExcelActivity;
 import com.zkp.demos.modules.mvp.MvpActivity;
+import com.zkp.demos.modules.rader.RadarActivity;
 import com.zkp.demos.permission.RuntimeRationale;
 
 import java.util.ArrayList;
@@ -48,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        App.getApplication().initUnCaughtHandler();
-        App.getApplication().addActivity(this);
+//        App.getApplication().initUnCaughtHandler();
+//        App.getApplication().addActivity(this);
 
         requestPermission(mPermissions);
 
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         mListView = findViewById(R.id.listView);
         mTitles.add("团队数据");
         mTitles.add("mvp架构");
+        mTitles.add("雷达图");
         mAdapter = new MainListViewAdapter(this, mTitles);
         mListView.setAdapter(mAdapter);
 
@@ -95,6 +97,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "mvp架构":
                         startActivity(new Intent(MainActivity.this, MvpActivity.class));
+                        break;
+                    case "雷达图":
+                        startActivity(new Intent(MainActivity.this, RadarActivity.class));
                         break;
                     default:
                         break;

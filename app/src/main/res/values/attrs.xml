@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RadarView">
+        <!--最外圈到中心点的半径-->
+        <attr name="Radius" format="dimension" />
+        <!--画几圈 也就是说把半径分割成几份-->
+        <attr name="intervalCount" format="integer" />
+        <!--顶点文字颜色-->
+        <attr name="titleColor" format="color|reference" />
+        <!--数值颜色-->
+        <attr name="valueColor" format="color|reference" />
+        <!--数值边框颜色-->
+        <attr name="valueStorkColor" format="color|reference" />
+        <!--边框线条颜色-->
+        <attr name="storkColor" format="color|reference" />
+    </declare-styleable>
+
+</resources>

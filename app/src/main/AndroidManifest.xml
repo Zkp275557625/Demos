@@ -31,6 +31,7 @@
 
         <activity android:name=".modules.excel.ExcelActivity" />
         <activity android:name=".modules.mvp.MvpActivity" />
+        <activity android:name=".modules.rader.RadarActivity" />
 
     </application>
 
